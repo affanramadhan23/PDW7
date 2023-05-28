@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1612988952181-c995680479a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+            background-size: cover;}
+    </style>
+</head>
+
+<body>
+    <h1>Tentang Diri</h1>
+    <div class="centered-image">
+        <img src="https://cdn.icon-icons.com/icons2/2644/PNG/512/person_fill_icon_159457.png" style="width: 100px; height: 100px;">
+
+    </div>
+    
+    <script>
+        // Mengambil parameter yang dikirim dari halaman sebelumnya
+        const params = new URLSearchParams(window.location.search);
+        const nama = params.get('nama');
+        const usia = params.get('usia');
+        const jk = params.get('jk');
+        const alamat = params.get('alamat');
+        const prodi = params.get('prodi');
+
+        // Menampilkan data pada halaman "Tentang Diri"
+        document.write("<p>Hai, nama saya " + nama + ", usia saya " + usia + " tahun. Saya seorang " + jk + " yang tinggal di " + alamat + ". Saya berkuliah di UMY jurusan " + prodi + ".</p>");
+    </script>
+    <button class="next"><a href="hobi.html">Hobby</button>
+    <button class="next"><a href="form.html">Form</button>
+    <button class="back"><a href="index.html">Home</button>
+</body>
+
+</html>
